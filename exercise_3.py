@@ -6,3 +6,9 @@ Giá bán: 14.5 tỷ - liên hệ chính chủ: gặp A Phương
 """
 
 # Tìm chiều dài và chiều rộng và giá bán.
+if __name__ == '__main__':
+    data = data.split(":")
+    chieu_rong = data[1][11:14]
+    chieu_dai = data[1][16:19]
+    gia = data[3][0:5]
+    print(chieu_rong, chieu_dai, gia)
