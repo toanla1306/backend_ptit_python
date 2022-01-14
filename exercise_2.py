@@ -3,7 +3,7 @@
 
 if __name__ == '__main__':
     f = open("sdt_nhan_vien.txt", encoding='UTF-8')
-
+    g =open("sdt_nhan_vien_out.txt","w", encoding='UTF-8')
     doc=f.read()
     b=doc.split("\n")
 
@@ -21,4 +21,11 @@ if __name__ == '__main__':
                 else :
                     j=j+1
     print(b)
+    f.close()
+    
+    for i in b:
+        g.write(i)
+        g.write("\n")
+
+    g.close()
 
