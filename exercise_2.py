@@ -29,4 +29,13 @@ if __name__ == '__main__':
         list_number.append(x)
     for i in range(len(list_number)):
         list_number[i] = check_number(list_number[i])
+<<<<<<< HEAD
     print(list_number)
+    f1 = open("sdt_nhan_vien.txt", "w")
+    for num in list_number:
+        f1.write(num)
+    f1.close()
+    f.close()
+=======
+    print(list_number)
+>>>>>>> 0066b77acafec4913a4ecd3c1f5bdd5ce47e2410
